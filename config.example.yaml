@@ -1,0 +1,24 @@
+server:
+  http:
+    port: "$SERVER_PORT"
+cors:
+  allowed_origins:
+    - "http://*"
+    - "https://*"
+anchors:
+  - id: anchor-1
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  - id: anchor-2
+    x: 40.0
+    y: 0.0
+    z: 0.0
+  - id: anchor-3
+    x: 0.0
+    y: 20.0
+    z: 0.0
+goal:
+  x: 40.0
+  y_min: 8.5
+  y_max: 11.5

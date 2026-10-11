@@ -1,0 +1,12 @@
+services:
+  api:
+    container_name: goal-detection-api
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./:/api
+    tty: true
+    stdin_open: true
